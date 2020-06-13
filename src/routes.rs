@@ -3,5 +3,8 @@ use rocket::Rocket;
 
 pub fn build() -> Rocket {
     rocket::ignite()
-        .mount("/", routes![controller::auth_controller::register])
+        .mount("/", routes![
+            controller::auth_controller::register,
+            controller::auth_controller::profile,
+        ])
 }

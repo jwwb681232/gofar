@@ -16,3 +16,5 @@ serde_json = "1.0.39"
 serde = {version = "1.0.90",features = ["derive"]}
 serde_derive = "1.0.90"
 jsonwebtoken = "7"
+dotenv = "0.15"
+dotenv_codegen = "0.15"
