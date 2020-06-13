@@ -10,9 +10,8 @@ extern crate serde_json;
 extern crate serde_derive;
 
 mod controller;
+mod routes;
 
 fn main() {
-    rocket::ignite()
-        .mount("/",routes![controller::auth_controller::register])
-        .launch();
+    routes::build().launch();
 }
